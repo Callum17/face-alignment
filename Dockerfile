@@ -11,7 +11,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libboost-all-dev \
          python-qt4 \
          libjpeg-dev \
-         libpng-dev &&\
+         ffmpeg \
+         libsm6 \
+         libxext6 \
+         libpng-dev && \
      rm -rf /var/lib/apt/lists/*
 
 RUN curl -o ~/miniconda.sh -O  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  && \
